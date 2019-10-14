@@ -10,4 +10,13 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# Aliases
+
+# git
+alias gdel='git branch --merged | grep -v "\master" | xargs -n 1 git branch -d'
+alias gpc='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
+alias gpp='git pull origin "$(git-branch-current 2> /dev/null)" && git push origin "$(git-branch-current 2> /dev/null)"'
+alias gpho='git push origin "$(git-branch-current 2> /dev/null)"'
+alias gplo='git pull origin "$(git-branch-current 2> /dev/null)"'
+alias gst='git status'
+alias gal='git add .'
