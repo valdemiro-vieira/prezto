@@ -10,7 +10,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Commands
+fpath=(/usr/local/share/zsh-completions $fpath) # zsh-completions
+
 # Aliases
+
+# System commands
+alias ll='ls -la'
+
+# Navigation
+alias dev='cd ~/Developer'
+alias gosrc='cd ~/Developer/go/src'
+alias godev='cd ~/Developer/go/src/github.com/inloco'
+alias preztoconf='cd ~/.zprezto'
 
 # git
 alias gdel='git branch --merged | grep -v "\master" | xargs -n 1 git branch -d'
@@ -20,3 +32,5 @@ alias gpho='git push origin "$(git-branch-current 2> /dev/null)"'
 alias gplo='git pull origin "$(git-branch-current 2> /dev/null)"'
 alias gst='git status'
 alias gal='git add .'
+alias gcd='git checkout develop'
+alias gcdot='git checkout -- .'

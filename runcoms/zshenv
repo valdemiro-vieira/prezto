@@ -12,3 +12,7 @@ fi
 
 # Path variables
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH=$PATH:/usr/local/Cellar/go/1.13.1/bin
+export PATH=$PATH:$HOME/Developer/go/bin
+export GOPATH=$HOME/Developer/go
+export GOROOT="/usr/local/Cellar/go/1.13.1/libexec"
