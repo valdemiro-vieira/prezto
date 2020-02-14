@@ -38,3 +38,6 @@ alias gmit='git commit'
 
 # other commands
 alias historian='docker -- run -p 9999:9999 gcr.io/android-battery-historian/stable:3.0 --port 9999'
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/larissa.navarro/.sdkman"
+[[ -s "/Users/larissa.navarro/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/larissa.navarro/.sdkman/bin/sdkman-init.sh"
