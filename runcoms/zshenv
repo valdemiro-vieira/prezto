@@ -13,7 +13,7 @@ fi
 # Path variables
 export GOPATH=$HOME/Developer/go
 export GOROOT=/usr/local/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$HOME/Developer/go/bin
 export PATH=$PATH:$GOROOT/bin
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH=$PATH:/Users/valdemiro.vieira/Library/Android/sdk/platform-tools
